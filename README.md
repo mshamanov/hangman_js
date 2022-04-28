@@ -1,5 +1,5 @@
 # Hangman Game
-HTML + CSS + JavaScript
+HTML + CSS + JavaScript\
 Language: Russian
 
 ### Link:

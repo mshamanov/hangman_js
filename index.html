@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="ico/favicon-16x16.png" rel="icon" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="scripts/words.js" defer></script>
+    <script src="scripts/view.js" defer></script>
+    <script src="scripts/hangman.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <title>Словоруб</title>
+  </head>
+  <body>
+    <div id="overlay" class="column flex-center">
+      <h1 id="game-title">Словоруб❗</h1>
+      <button id="new-game-btn">Новая игра</button>
+    </div>
+    <div class="row flex-center">
+      <div id="board">
+        <h3 id="score">Баллы: 0</p>
+      </div>
+    </div>
+    <div class="row flex-space-around min-height-500">
+      <div class="column flex-center">
+        <h1 id="sign-left" class="sign hidden"></h1>
+      </div>
+      <div class="column flex-center">
+        <div id="quiz-box">
+          <p id="quiz-word"></p>
+          <span id="score-circle" class="hidden"></span>
+        </div>
+        <form id="guess-form">
+          <div id="misc">
+            <p id="attempts-left" class="text-center">Попыток: 0</p>
+            <p id="hints-left" class="text-center">Подсказок: 0</p>
+          </div>
+          <input
+            id="user-input"
+            type="text"
+            required
+            minlength="1"
+          />
+          <div id="actions">
+            <button id="guess-btn" type="submit">Ввод [enter]</button>
+            <button id="hint-btn" type="button">Подсказка [tab]</button>
+          </div>
+        </form>
+      </div>
+      <div class="column flex-center">
+        <h1 id="sign-right" class="sign hidden">&nbsp;</h1>
+      </div>
+    </div>
+  </body>
+</html>
